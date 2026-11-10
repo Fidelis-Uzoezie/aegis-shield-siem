@@ -4,7 +4,7 @@ An enterprise-grade repository demonstrating production runtime threat detection
 
 ## Architecture Data Flow
 ```text
-[ AWS GuardDuty / CloudTrail ] ──► [ Python SIEM Script ] ──► [ 🚨 Auto-Generate Jira Ticket ]
+[ AWS GuardDuty / CloudTrail ] ──► [ Python SIEM Script ] ──► [  Auto-Generate Jira Ticket ]
                                                                              
 [ AWS Secrets Manager ]        ──► [ ClusterSecretStore ]  ──► [ External Secrets Operator ]
                                                                               │
