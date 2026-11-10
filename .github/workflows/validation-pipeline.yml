@@ -1,0 +1,11 @@
+name: Aegis Shield Verification Core
+on: [push]
+jobs:
+  siem-validation:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Run Runtime Logging and Alerting Validation
+      run: |
+        pip install -r requirements-siem.txt
+        python scripts/siem_alert_parser.py
